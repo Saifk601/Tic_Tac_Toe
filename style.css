@@ -68,7 +68,7 @@ body{
 /* 📱 Mobile View (Width ≤ 600px) */
 @media (max-width: 600px) {
     .game {
-        height: 120vmin;
+        height: 80vmin;
         width: 80vmin;
         gap: 2vmin;
     }
