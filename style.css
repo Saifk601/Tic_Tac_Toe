@@ -1,0 +1,105 @@
+* {
+    margin : 0;
+    padding : 0;
+}
+h1 {
+    Color :rgb(29, 251, 25);
+}
+
+body{
+    background-color: #083738;
+    text-align: center;
+}
+
+.container {
+    height: 70vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game {
+    height: 60vmin;
+    width : 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 1.5vmin;
+
+}
+.box {
+    height: 18vmin;
+    width : 18vmin;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0 , 0, 0 ,0.3);
+    background-color: rgb(237, 236, 163);
+    font-size: 8vmin;
+    color : rgb(233, 17, 17);
+}
+#reset , #new-btn{
+    padding : 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #99b766;
+    border-radius: 1rem;
+    border: none;
+}
+
+#msg {
+    color: #efef27;
+    font-size: 8vmin;
+
+}
+.msg-container {
+   height: 90vmin;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap : 4rem;
+}
+.hide {
+    display: none;
+}
+
+/* 📱 Mobile View (Width ≤ 600px) */
+@media (max-width: 600px) {
+    .game {
+        height: 120vmin;
+        width: 80vmin;
+        gap: 2vmin;
+    }
+
+    .box {
+        height: 22vmin;
+        width: 22vmin;
+        font-size: 10vmin;
+    }
+
+    #msg {
+        font-size: 6vmin;
+    }
+
+    #reset, #new-btn {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+}
+
+/* 🖥️ Desktop View (Width > 1024px) */
+@media (min-width: 1024px) {
+    .game {
+        width: 50vmin;
+        height: 50vmin;
+        gap: 1vmin;
+    }
+
+    .box {
+        height: 16vmin;
+        width: 16vmin;
+        font-size: 7vmin;
+    }
+}
